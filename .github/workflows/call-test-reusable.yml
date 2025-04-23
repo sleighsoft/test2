@@ -4,4 +4,4 @@ on:
 
 jobs:
   use-aw:
-    uses: sleighsoft/test/.github/workflows/reusable-test.yml@v2
+    uses: sleighsoft/test/.github/workflows/reusable.yml@v2
