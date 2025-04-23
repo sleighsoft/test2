@@ -1,0 +1,7 @@
+name: Call test/reusable-test Workflow
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  use-aw:
+    uses: sleighsoft/test/.github/workflows/reusable-test.yml@v2
