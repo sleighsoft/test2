@@ -1,0 +1,10 @@
+name: Call From Test
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  callme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/simpleaction
