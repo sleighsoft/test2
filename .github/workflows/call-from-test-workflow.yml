@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
+      - name: All Variables
+        run: |
+          env
       - name: GitHub Variables
         run: |
           echo "CI: $CI"
