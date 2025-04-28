@@ -1,0 +1,8 @@
+name: "Simple Echo Composite Action"
+description: "A composite action that outputs 'I am an echo' to the console"
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: |
+        echo "I am an echo"
