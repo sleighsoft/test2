@@ -9,4 +9,7 @@ jobs:
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
+      - name: List directory
+        run: |
+          ls -lah
       - uses: ./.github/actions/simpleaction
