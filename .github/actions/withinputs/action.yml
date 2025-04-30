@@ -1,0 +1,15 @@
+name: "Action with inputs"
+description: "A composite action that outputs inputs to the console"
+inputs:
+  option:
+    description: Choose an option
+    required: true
+    default: option1
+    options:
+      - option1
+      - option2
+      - option3
+runs:
+  using: "composite"
+  steps:
+    - run: echo "You selected ${{ inputs.option }}"
