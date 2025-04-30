@@ -5,4 +5,5 @@ runs:
   steps:
     - shell: bash
       run: |
+        pwd
         ./script.sh
