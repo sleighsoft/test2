@@ -1,9 +1,13 @@
 name: "Run a script"
 description: "-"
+inputs:
+  pattern:
+    description: Pattern
+    required: true
+    default: "-iname '*.yml' -o -iname '*.yaml'"
 runs:
   using: "composite"
   steps:
     - shell: bash
       run: |
-        pwd
-        ./script.sh
+        find . -type f \( ${{ inputs.pattern }} \)
