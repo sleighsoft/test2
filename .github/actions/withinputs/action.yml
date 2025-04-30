@@ -12,4 +12,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "You selected ${{ inputs.option }}"
+    - shell: bash
+      run: echo "You selected ${{ inputs.option }}"
