@@ -1,0 +1,11 @@
+name: Script action
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  callme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/withscript
