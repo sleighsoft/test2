@@ -1,0 +1,15 @@
+name: Call Scriptinput Action
+on:
+  workflow_dispatch:
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: sleighsoft/test2/.github/actions/scriptinput@main
+        with:
+          script: |
+            "echo 'Hello from the script!'"
+            "echo 'Hello from the script2!'"
