@@ -1,0 +1,19 @@
+name: Run Bash Script
+description: A GitHub composite action that executes a provided bash script.
+
+inputs:
+  script:
+    description: The Bash script to run
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "hi"
+      shell: bash
+
+    - run: ${{ inputs.script }}
+      shell: bash
+
+    - run: echo "ho"
+      shell: bash
