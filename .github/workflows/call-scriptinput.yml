@@ -11,5 +11,5 @@ jobs:
       - uses: sleighsoft/test2/.github/actions/scriptinput@main
         with:
           script: |
-            "echo 'Hello from the script!'"
-            "echo 'Hello from the script2!'"
+            echo 'Hello from the script!'
+            echo 'Hello from the script2!'
